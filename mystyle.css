@@ -22,7 +22,7 @@
             border: none;
             color: white;
             padding: 10px 15px;
-            width:fit-content;
+            width: fit-content;
             text-align: center;
             text-decoration: none;
             font-size: 16px;
@@ -73,10 +73,10 @@
         /*drop down list */
 
         .styled-select {
-         background:  no-repeat 96% 0;
+            background: no-repeat 96% 0;
             height: 29px;
             overflow: hidden;
-            width:fit-content;
+            width: fit-content;
         }
 
         .blue-list {
@@ -90,4 +90,4 @@
             -moz-border-radius: 20px;
             border-radius: 20px;
         }
-/*Admin Account Style*/
+        /*Admin Account Style*/
