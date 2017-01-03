@@ -10,6 +10,7 @@ session_start();
 $link= mysqli_connect("localhost","root","", "InternetProgramming");
 $sql = "SELECT `Date`,Statues FROM Attendance WHERE id='".mysqli_real_escape_string($link,$_SESSION['id'])."' AND Course_ID='".mysqli_real_escape_string($link,$_POST['courseid'])."'";
 $result= mysqli_query($link,$sql);
+echo '<div class="middle">';
 
 echo "<table border=1>
 <tr>
@@ -22,7 +23,7 @@ echo "<tr><td>" . $row['Date'] . "</td><td>" . $row['Statues'] . "</td></tr>";
 }
 
 echo "</table>";
-
+echo"</div";
 
 mysqli_close($link);
 ?>

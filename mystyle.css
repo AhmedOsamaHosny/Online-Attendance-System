@@ -1,93 +1,135 @@
-        #BigWelcome {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            position: fixed;
-            top: 15%;
-            left: 20%;
-            font-size: 4em;
-            text-align: center;
-            color: rgb(240, 240, 240);
-            font-family: sans-serif;
-            font-weight: 600;
-        }
+table {
+    border-collapse: collapse;
+    width: 60%;
+    padding-left: 100px;
 
-        #div-home-buttons {
-            position: fixed;
-            top: 45%;
-            left: 45%;
-        }
+}
+.middle{
+  padding-left: 20%;
 
-        .btn_homepage {
-            background-color: #008CBA;
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            border: none;
-            color: white;
-            padding: 10px 15px;
-            width: fit-content;
-            text-align: center;
-            text-decoration: none;
-            font-size: 16px;
-            margin: 4px 2px;
-            -webkit-transition-duration: 0.4s;
-            cursor: pointer;
-            background-color: white;
-            color: black;
-            border: 2px solid #008CBA;
-        }
+}
+table, th, td {
+    border: 1px solid black;
+}
 
-        .btn_homepage:hover {
-            background-color: #008CBA;
-            color: white;
-        }
-        /*connect style*/
+th {
+    height: 5px;
+    text-align: center;
+    background-color: #008CBA;
+    color: white;
 
-        .connect-signin-div {
-            position: fixed;
-            top: 20%;
-            left: 30%;
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        }
+}
+td {
+    height: 5px;
+    vertical-align: bottom;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+tr{background-color: #f5f5f5}
 
-        .connect-signup-div {
-            position: fixed;
-            top: 40%;
-            left: 40%;
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        }
-        /*Student Account style*/
 
-        #Menu {
-            width: 100%;
-            height: 50px;
-            background-color: #B2B0B4;
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-        }
 
-        #logo {
-            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-            padding: 15px 0 0 20px;
-            font-size: 120%;
-            font-weight: bold;
-            float: left;
-            color: black;
-        }
-        /*drop down list */
+#BigWelcome {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    position: fixed;
+    top: 15%;
+    left: 20%;
+    font-size: 4em;
+    text-align: center;
+    color: rgb(240, 240, 240);
+    font-family: sans-serif;
+    font-weight: 600;
+}
 
-        .styled-select {
-            background: no-repeat 96% 0;
-            height: 29px;
-            overflow: hidden;
-            width: fit-content;
-        }
+#div-home-buttons {
+    position: fixed;
+    top: 45%;
+    left: 45%;
+}
 
-        .blue-list {
-            background-color: #008CBA;
-            color: white;
-            text-align: center;
-        }
+.btn_homepage {
+    background-color: #008CBA;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 2px solid #008CBA;
+}
 
-        .rounded {
-            -webkit-border-radius: 20px;
-            -moz-border-radius: 20px;
-            border-radius: 20px;
-        }
-        /*Admin Account Style*/
+.btn_homepage:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+
+/*connect style*/
+
+.connect-signin-div {
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.connect-signup-div {
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+
+/*Student Account style*/
+
+#Menu {
+    width: 100%;
+    height: 50px;
+    background-color: #B2B0B4;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+#logo {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    padding: 15px 0 0 20px;
+    font-size: 120%;
+    font-weight: bold;
+    float: left;
+    color: black;
+}
+
+
+/*drop down list */
+
+.styled-select {
+    background: no-repeat 96% 0;
+    height: 29px;
+    overflow: hidden;
+    width: fit-content;
+}
+
+.blue-list {
+    background-color: #008CBA;
+    color: white;
+    text-align: center;
+}
+
+.rounded {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+
+/*Admin Account Style*/
