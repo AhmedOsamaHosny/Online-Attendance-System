@@ -105,29 +105,54 @@ if (isset($_POST["SignUp"])) {
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Home Page</title>
+
+		<title>Online Attendance System Home Page</title>
+		<link rel="stylesheet" type="text/css" href="mystyle.css">
 	</head>
-	<body>
-		<form method="post">
+	<body class="connect-body" background="notepad.jpg">
+
+		<div >
+
+
+	<form method="post">
+
+		<!--Sign In -->
+
+		<div class="connect-signin-div" >
+			<fieldset>
+			 <legend>Sign In</legend>
+
+			<label for="email">Email</label>
+			<input type="email" name="loginemail" id="email"/>
+			<label for="password">Password</label>
+			<input type="password" name="loginpassword"/><br>
+			<input class="btn_homepage" id="pg-connect" type="submit" name="LogIn" value="Log In"/>
+</fieldset>
+		</div>
+
+
+
+<!--Sign Up -->
+	<div class="connect-signup-div">
+		<fieldset>
+			<legend>Sign Up</legend>
 
 		<label for="Name">Name</label>
 		<input type="text" name="name"/><br/>
 		<label for="email">Email</label>
+
 		<input type="email" name="email" id="email"/><br/>
+
 		<label for="password">Password</label>
 		<input type="password" name="password"/><br/>
 		Account Type<br/>
-		Professor  <input type="radio" name="Type" value="Professor"/><br/>
-		Student<input type="radio" name="Type" value="Student"/><br/>
-		 <input type="submit" name="SignUp" value="Sign Up"/>
+		Professor  <input type="radio" name="Type" value="Professor"/><br>
+		Student<input type="radio" name="Type" value="Student"/><br>
+		 <input class="btn_homepage" id="pg-connect" type="submit"  name="SignUp" value="Sign Up"/>
 		<br><br>
-
-		<label for="email">Email</label>
-		<input type="email" name="loginemail" id="email"/>
-		<label for="password">Password</label>
-		<input type="password" name="loginpassword"/>
-		<input type="submit" name="LogIn" value="Log In"/>
-
-		</form>
+</fieldset>
+	</div>
+	</form>
+</div>
 	</body>
 </html>

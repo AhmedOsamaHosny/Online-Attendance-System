@@ -40,6 +40,7 @@ if (isset($_POST["viewCourses"])) {
 <html>
 <head>
 	<title>Admin Page</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
 <form method="post">
@@ -47,7 +48,7 @@ if (isset($_POST["viewCourses"])) {
 	Course Name<input type="text" name="courseName"><br>
 	Dr. Name
 <?php
-	echo '<select name="username">';
+	echo '<select class="styled-select blue-list rounded" name="username">';
 	$sql = "SELECT `Name` FROM `users` WHERE Type='Professor'";
 	$result = mysqli_query($link,$sql);
 	while ($row= mysqli_fetch_array($result)) {
@@ -55,9 +56,9 @@ if (isset($_POST["viewCourses"])) {
 	}
 	echo "</select>";
 ?><br>
-<input type="submit" name="submit" value="submit" />
-<input type="submit" name="viewCourses" value="View Courses">
-<button><a href="connect.php?logout=1">Log Out</a></button>
+<input class="btn_homepage" type="submit" name="submit" value="submit" />
+<input class="btn_homepage" type="submit" name="viewCourses" value="View Courses">
+<button class="btn_homepage" ><a href="connect.php?logout=1">Log Out</a></button>
 
 </form>
 </body>
