@@ -42,13 +42,18 @@ if (isset($_POST["viewCourses"])) {
 	<title>Admin Page</title>
   <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
-<body>
+<body style="margin:0 ;padding:0 ; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;">
+  <div id="Menu"  >
+    <div id="logo">   Welcome to your Account  <? echo $_SESSION['name'] ;?> </div>
+  </div>
+
+
 <form method="post">
-	Course ID<input type="text" name="courseId"/><br>
-	Course Name<input type="text" name="courseName"><br>
+	Course ID<input style="margin-top:20px;" type="text" name="courseId"/><br>
+	Course Name<input style="margin-top:10px" type="text" name="courseName"><br>
 	Dr. Name
 <?php
-	echo '<select class="styled-select blue-list rounded" name="username">';
+	echo '<select style="margin-top:10px " class="styled-select blue-list rounded" name="username">';
 	$sql = "SELECT `Name` FROM `users` WHERE Type='Professor'";
 	$result = mysqli_query($link,$sql);
 	while ($row= mysqli_fetch_array($result)) {
@@ -56,7 +61,8 @@ if (isset($_POST["viewCourses"])) {
 	}
 	echo "</select>";
 ?><br>
-<input class="btn_homepage" type="submit" name="submit" value="submit" />
+
+<input class="btn_homepage" type="submit" style="margin-top:20px" name="submit" value="submit" />
 <input class="btn_homepage" type="submit" name="viewCourses" value="View Courses">
 <button class="btn_homepage" ><a href="connect.php?logout=1">Log Out</a></button>
 
