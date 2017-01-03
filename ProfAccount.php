@@ -20,15 +20,22 @@ if (isset($_POST['submit'])) {
 
 <!DOCTYPE html>
 <html>
+<head>
+<title>Professor's Page</title>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 
-<body>
-<h1> Welcome to your Account Doctor <? echo $_SESSION['name'] ;?> <h1>
+</head>
+<body style="margin:0 ;padding:0 ; font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;">
+  <div id="Menu">
+    <div id="logo">   Welcome to your Account Doctor <? echo $_SESSION['name'] ;?> </div>
+  </div>
+
   <form method="post">
     <label>Select Course </label>
     <?php
 
     // Select Courses from doctor's courses
-      echo '<select name="courseid" id="courseselect" onchange="showUser()">';
+      echo '<select class="styled-select blue-list rounded" name="courseid" id="courseselect" onchange="showUser()">';
       $sql = "SELECT `Course_Name`,`Course_ID` FROM `Course`  WHERE Professor_Name ='".mysqli_real_escape_string($link,$_SESSION['name'])."' ";
       $result = mysqli_query($link,$sql);
       echo "<option value='' disabled selected>choose course</option>";
@@ -70,8 +77,9 @@ xhttp.send("courseid="+courseid);
     Attend <input type="radio" name="Statues" value="Attend"/><br/>
     Late <input type="radio" name="Statues" value="Late"/><br/>
     Absent <input type="radio" name="Statues" value="Absent"/><br/>
-    <br>  <input type="submit" name="submit" value="submit"> <button><a href="check_student_attendance.php">Check Attendance</a></button>
-    <button><a href="connect.php?logout=1">Log Out</a></button>
+    <br>  <input class="btn_homepage" type="submit" name="submit" value="submit">
+    <button class="btn_homepage" ><a href="check_student_attendance.php">Check Attendance</a></button>
+    <button class="btn_homepage" ><a  href="connect.php?logout=1">Log Out</a></button>
   </form>
 
 </body>
